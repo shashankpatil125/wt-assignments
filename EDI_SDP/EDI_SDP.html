@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        let relevance_shown = false;
+        $(document).ready(() => {
+            $("#show_relevance_btn").on("click", (e) => {
+                if (!relevance_shown) {
+                    e.target.innerText = "Hide relevance";
+                    $("#relevance-nav").removeClass("hidden");
+                    relevance_shown = true;
+                } else {
+                    e.target.innerText = "Show relevance";
+                    $("#relevance-nav").addClass("hidden");
+                    relevance_shown = false;
+                }
+            });
+        });
+    </script>
+
+</head>
+
+
+<body>
+    <div style="padding-top: 10px">
+        <ul class="nav nav-pills">
+            <li>
+                <a class="navbar-brand" href="#"> VIT </a>
+            </li>
+            <button class="btn" id="show_relevance_btn">Show relevance</button>
+        </ul>
+        <ul class="nav nav-pills hidden" id="relevance-nav">
+            <li>
+                <a class="active navbar-brand" data-toggle="pill" href="#relevance">
+                    Relevance
+                </a>
+            </li>
+            <li><a data-toggle="pill" href="#sdp">SDP</a></li>
+            <li><a data-toggle="pill" href="#edi">EDI</a></li>
+            <li><a data-toggle="pill" href="#dt">DT</a></li>
+            <li><a data-toggle="pill" href="#cp">CP</a></li>
+        </ul>
+        <div class="tab-content" style="padding: 10px">
+            <div id="relevance" class="tab-pane fade in active">
+                <h3>Relevance for various programs</h3>
+                <p>Brove the tabs and see revelance for each course</p>
+            </div>
+            <div id="sdp" class="tab-pane fade in">
+                <h3>Software development project</h3>
+                <p>
+                    Software development projects are an essential part of any computer
+                    science or software engineering curriculum. These projects are
+                    designed to provide students with practical experience in developing
+                    software from scratch, and to apply the theoretical knowledge gained
+                    in the classroom to real-world problems. The benefits of software
+                    development projects are numerous. First and foremost, they provide
+                    an opportunity for students to work independently and take ownership
+                    of their work. Students must manage their time effectively and plan
+                    their work, which helps to develop critical thinking,
+                    problem-solving, and project management skills. Software development
+                    projects also provide students with an opportunity to develop
+                    technical skills in a specific programming language or technology.
+                    This helps to make students more marketable to potential employers
+                    upon graduation. Moreover, students get a chance to showcase their
+                    technical skills and creativity in building innovative solutions to
+                    real-world problems. Finally, software development projects can also
+                    be a great way for students to work on projects that are meaningful
+                    to them. They may choose to work on projects that have a direct
+                    impact on their community or projects that they are personally
+                    interested in, making the project more engaging and rewarding. In
+                    summary, software development projects are an essential component of
+                    computer science and software engineering education. They provide
+                    students with practical experience in developing software, develop
+                    their critical thinking and project management skills, enhance their
+                    technical skills, and allow them to work on meaningful projects.
+                </p>
+            </div>
+            <div id="edi" class="tab-pane fade">
+                <h3>Engineering design and innovation</h3>
+
+                <p>
+                    "Engineering design and innovation" is a group project that is
+                    typically undertaken by engineering students each semester. The main
+                    objective of this project is to provide students with practical
+                    hands-on experience in designing and developing engineering
+                    solutions to real-world problems. Through this project, students
+                    learn the importance of teamwork, problem-solving, communication,
+                    and project management. They work together in groups to identify a
+                    problem, conduct research, analyze data, and design and develop a
+                    solution. They also learn how to document their work, present their
+                    findings, and receive feedback from their peers and instructors.
+                    This project is beneficial for students as it allows them to apply
+                    the theoretical knowledge they have learned in their coursework to
+                    real-world problems. It helps them develop the skills and experience
+                    necessary to succeed as engineers and prepares them for the
+                    challenges they will face in their future careers. Additionally,
+                    this project provides students with the opportunity to network and
+                    build relationships with their peers, instructors, and potential
+                    employers. It also helps them develop a strong portfolio of work
+                    that they can showcase to future employers, which can increase their
+                    chances of finding employment after graduation. Overall, the
+                    engineering design and innovation project is an important and
+                    valuable experience for engineering students as it prepares them for
+                    success in their future careers and provides them with the skills,
+                    knowledge, and experience necessary to become successful engineers.
+                </p>
+            </div>
+            <div id="dt" class="tab-pane fade">
+                <h3>Design and Thinking</h3>
+                <p>
+                    Design and Thinking (DT) is an approach to problem-solving that
+                    emphasizes empathy, collaboration, and experimentation. It is a
+                    methodology that involves identifying a problem, gathering data,
+                    brainstorming solutions, prototyping, and testing. DT is used in a
+                    wide range of fields, from product design to social innovation, and
+                    is often employed in interdisciplinary teams. The paper publishing
+                    component of DT is an important aspect of the course as it helps
+                    students develop skills in academic writing and research. By
+                    reflecting on their EDI project and the design process they went
+                    through, students can develop a deeper understanding of the problem
+                    they were trying to solve, the design choices they made, and the
+                    impact of their solution. Publishing their work also helps students
+                    build a portfolio of their projects and accomplishments, which can
+                    be valuable when applying for jobs or further education. Moreover,
+                    publishing a paper in a peer-reviewed journal or presenting it at a
+                    conference can also help students gain recognition within their
+                    field and contribute to the larger body of knowledge in the area of
+                    design and innovation. It also provides an opportunity to receive
+                    feedback and constructive criticism from experts in the field, which
+                    can help students refine their ideas and approach to
+                    problem-solving. Overall, the paper publishing component of DT is a
+                    valuable exercise in critical thinking, communication, and academic
+                    writing, and it provides students with an opportunity to showcase
+                    their design skills and contribute to the field of design and
+                    innovation.
+                </p>
+            </div>
+            <div id="cp" class="tab-pane fade">
+                <h3>Course project</h3>
+                <p>
+                    Course projects are an important component of any academic program.
+                    They provide students with the opportunity to apply the knowledge
+                    and skills they have learned in a particular course to a real-world
+                    problem or situation. This can help students to gain a deeper
+                    understanding of the subject matter, as well as develop important
+                    critical thinking and problem-solving skills. In addition, course
+                    projects can help students to develop important career-related
+                    skills, such as project management, teamwork, and communication.
+                    These skills are highly valued by employers and can give students a
+                    competitive advantage in the job market. Course projects can also be
+                    a way for students to explore their own interests and passions
+                    within a particular subject area. By choosing a project topic that
+                    is meaningful to them, students are more likely to be engaged and
+                    motivated in their work. Overall, course projects are an important
+                    and valuable component of any academic program. They provide
+                    students with the opportunity to apply their knowledge and skills in
+                    a meaningful way, develop important career-related skills, and
+                    explore their own interests and passions within a particular subject
+                    area.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
